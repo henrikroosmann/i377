@@ -9,14 +9,26 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <!-- First homework -->
   <servlet>
     <description></description>
     <display-name>Hello</display-name>
     <servlet-name>Hello</servlet-name>
-    <servlet-class>test.Hello</servlet-class>
+    <servlet-class>first.Hello</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Hello</servlet-name>
     <url-pattern>/Hello</url-pattern>
+  </servlet-mapping>
+  <!-- Second homework -->
+  <servlet>
+  	<description></description>
+  	<display-name>HomePage</display-name>
+  	<servlet-name>HomePage</servlet-name>
+  	<servlet-class>second.HomePage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HomePage</servlet-name>
+  	<url-pattern>/HomePage</url-pattern>
   </servlet-mapping>
 </web-app>
