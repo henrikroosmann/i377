@@ -9,6 +9,12 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <listener>
+  	<listener-class>listeners.SessionCounterListener</listener-class>
+  </listener>
+  <session-config>
+    <session-timeout>15</session-timeout>
+  </session-config>
   <!-- First homework -->
   <servlet>
     <description></description>
@@ -41,7 +47,4 @@
     <servlet-name>SessionCount</servlet-name>
     <url-pattern>/SessionCount</url-pattern>
   </servlet-mapping>
-  <listener>
-  	<listener-class>second.SessionCounterListener</listener-class>
-  </listener>
 </web-app>

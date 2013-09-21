@@ -1,4 +1,4 @@
-package second;
+package listeners;
 
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
@@ -6,10 +6,6 @@ import javax.servlet.http.HttpSessionListener;
 public class SessionCounterListener implements HttpSessionListener {
  
   private static int totalActiveSessions = 0;
- 
-  public static int getTotalActiveSession(){
-	return totalActiveSessions;
-  }
  
   @Override
   public void sessionCreated(HttpSessionEvent event) {
@@ -19,5 +15,9 @@ public class SessionCounterListener implements HttpSessionListener {
   @Override
   public void sessionDestroyed(HttpSessionEvent event) {
 	totalActiveSessions--;
-  }	
+  }
+
+  public static int getTotalActiveSession(){
+	return totalActiveSessions;
+  }
 }
