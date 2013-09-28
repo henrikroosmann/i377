@@ -1,9 +1,8 @@
 /build
 /bin
+/WebContent/WEB-INF/lib
 
 *.class
-
-# Package Files #
-*.jar
 *.war
-*.ear
+
+.DS_Store
